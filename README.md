@@ -169,7 +169,9 @@ Wait for the Jenkins to be restarted.
 ## Creation of Jenkins Pipeline
 
 - When you click on New Item there are multiple ways to create a Jenkins Pipeline
+
   ![Screenshot 2024-05-08 090602](https://github.com/kaustubhchile/git_practice_test/assets/72078555/6e046ae8-f563-4193-b702-cc57fd4de329)
 
 - and then choose the pipeline approach:
+
   ![Screenshot 2024-05-08 092804](https://github.com/kaustubhchile/git_practice_test/assets/72078555/cd72540f-0c5f-439f-9cad-845836fee3e8)
