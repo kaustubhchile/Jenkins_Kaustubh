@@ -95,21 +95,21 @@ Create First Admin User or Skip the step [If you want to use this Jenkins instan
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 02 09 AM" src="https://user-images.githubusercontent.com/43399466/215959757-403246c8-e739-4103-9265-6bdab418013e.png">
 
-Jenkins Installation is Successful. You can now starting using the Jenkins
+If you choose to skip the step then remember that when logging next time it will ask for username and password
+
+username: admin
+
+password: run the following command-->
+
+```bash
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+Jenkins Installation is Successful. You can now starting using the Jenkins.
+
+**_Note_**: Ensure that you are in the regular user instead of root user
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png">
-
-## Install the Docker Pipeline plugin in Jenkins:
-
-- Log in to Jenkins.
-- Go to Manage Jenkins > Manage Plugins.
-- In the Available tab, search for "Docker Pipeline".
-- Select the plugin and click the Install button.
-- Restart Jenkins after the plugin is installed.
-
-<img width="1392" alt="Screenshot 2023-02-01 at 12 17 02 PM" src="https://user-images.githubusercontent.com/43399466/215973898-7c366525-15db-4876-bd71-49522ecb267d.png">
-
-Wait for the Jenkins to be restarted.
 
 ## Docker Slave Configuration
 
@@ -129,10 +129,47 @@ usermod -aG docker ubuntu
 systemctl restart docker
 ```
 
-Once you are done with the above steps, it is better to restart Jenkins.
+After this switch user to jenkins using the following command
 
+```bash
+  su - jenkins
 ```
+
+To ckeck whether docker is installed and user has access to docker run the following command:
+
+```bash
+  docker run hello-world
+```
+
+Once you are done with the above steps, it is better to restart Jenkins as jenkins sometimes doesnt pick up the changes
+
+```bash
 http://<ec2-instance-public-ip>:8080/restart
+eg. http://18.206.176.142:8080/restart
 ```
 
 The docker agent configuration is now successful.
+
+## Install the Docker Pipeline plugin in Jenkins:
+
+- Log in to Jenkins.
+- Go to Manage Jenkins > Manage Plugins.
+- In the Available tab, search for "Docker Pipeline".
+- Select the plugin and click the Install button.
+- Restart Jenkins after the plugin is installed.
+
+<img width="1392" alt="Screenshot 2023-02-01 at 12 17 02 PM" src="https://user-images.githubusercontent.com/43399466/215973898-7c366525-15db-4876-bd71-49522ecb267d.png">
+
+![Screenshot 2024-05-08 083712](https://github.com/kaustubhchile/git_practice_test/assets/72078555/b9bd1727-e565-4d7f-8d83-b0c62ee92eb7)
+
+![Screenshot 2024-05-08 084234](https://github.com/kaustubhchile/git_practice_test/assets/72078555/c806506a-b473-45d6-96f0-5abf37ef7518)
+
+Wait for the Jenkins to be restarted.
+
+## Creation of Jenkins Pipeline
+
+- When you click on New Item there are multiple ways to create a Jenkins Pipeline
+  ![Screenshot 2024-05-08 090602](https://github.com/kaustubhchile/git_practice_test/assets/72078555/6e046ae8-f563-4193-b702-cc57fd4de329)
+
+- and then choose the pipeline approach:
+  ![Screenshot 2024-05-08 092804](https://github.com/kaustubhchile/git_practice_test/assets/72078555/cd72540f-0c5f-439f-9cad-845836fee3e8)
