@@ -189,3 +189,16 @@ Wait for the Jenkins to be restarted.
   Then choose the following option: `pipeline script from SCM` that is pick up a pipeline script from source code
 
   ![Screenshot 2024-05-09 103256](https://github.com/kaustubhchile/git_practice_test/assets/72078555/07e28125-8392-4761-86e5-9157fe0cc426)
+
+  Then add the following details:  
+  ![Screenshot 2024-05-09 105039](https://github.com/kaustubhchile/git_practice_test/assets/72078555/76958005-5c4d-438c-a0ba-afabece68c73)  
+  Then keep the branch as main as it is the current branch of the repository and save the changes.
+
+  ![Screenshot 2024-05-09 105246](https://github.com/kaustubhchile/git_practice_test/assets/72078555/719343f4-c475-438c-8e26-825beac156b9)
+
+  Then click on the build now:
+
+  ![Screenshot 2024-05-09 105701](https://github.com/kaustubhchile/git_practice_test/assets/72078555/66fc91a2-ab36-4322-b64c-b622ac24136f)
+
+  To see the console output click here:  
+  ![Screenshot 2024-05-09 110212](https://github.com/kaustubhchile/git_practice_test/assets/72078555/94faae96-c99f-4979-be5e-1cebed8b775a)
