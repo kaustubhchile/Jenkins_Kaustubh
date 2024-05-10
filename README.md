@@ -219,10 +219,7 @@ Wait for the Jenkins to be restarted.
   ![Screenshot 2024-05-09 105039](https://github.com/kaustubhchile/git_practice_test/assets/72078555/76958005-5c4d-438c-a0ba-afabece68c73)
 
   Then keep the branch as main as it is the current branch of the github repository and save the changes.
-  Then add the following details:  
-   ![Screenshot 2024-05-09 105039](https://github.com/kaustubhchile/git_practice_test/assets/72078555/76958005-5c4d-438c-a0ba-afabece68c73)
-
-  Then keep the branch as main as it is the current branch of the repository and save the changes.
+  Then add the following details:
 
   ![Screenshot 2024-05-09 105246](https://github.com/kaustubhchile/git_practice_test/assets/72078555/719343f4-c475-438c-8e26-825beac156b9)
 
