@@ -210,9 +210,9 @@ Wait for the Jenkins to be restarted.
 
     There is also an option for pipeline syntax which can help you to write your jenkins pipeline.
 
-  ![Screenshot 2024-05-09 102935](https://github.com/kaustubhchile/git_practice_test/assets/72078555/96348f92-a389-4b8f-af19-80b65ba89f67)
+    ![Screenshot 2024-05-09 102935](https://github.com/kaustubhchile/git_practice_test/assets/72078555/96348f92-a389-4b8f-af19-80b65ba89f67)
 
-      Then choose the following option: `pipeline script from SCM` that is pick up a pipeline script from source code
+  Then choose the following option: `pipeline script from SCM` that is pick up a pipeline script from source code
 
   ![Screenshot 2024-05-09 103256](https://github.com/kaustubhchile/git_practice_test/assets/72078555/07e28125-8392-4761-86e5-9157fe0cc426)
 
