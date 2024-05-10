@@ -183,9 +183,68 @@ Wait for the Jenkins to be restarted.
   ![Screenshot 2024-05-09 101126](https://github.com/kaustubhchile/git_practice_test/assets/72078555/86000387-8daa-46d6-9cfb-fc656dc95b66)  
   Then write the jenkins file code from `my-first-pipeline` here.
 
-  There is also an option for pipeline syntax which can help you to write your jenkins pipeline
+  ### How Jenkins works
+
+  - Jenkins is all about picking up the code from the local development or any version control system and delivering it to production while automating all the stages that are involved in between.
+
+    ![image](https://github.com/kaustubhchile/git_practice_test/assets/72078555/54c57b6c-1a1e-4ea4-b125-3136de95aae7)
+
+    Basic JenkinsFile eg.
+
+    ```
+    pipeline {
+      agent {
+        docker {
+          image 'node:16-alpine'
+        }
+      }
+    stages {
+        stage('Test') {
+          steps { -->Steps: commands that you want to execute in a particular stage
+            sh 'node --version'
+          }
+        }
+      }
+    }
+    ```
+
+    There is also an option for pipeline syntax which can help you to write your jenkins pipeline.
 
   ![Screenshot 2024-05-09 102935](https://github.com/kaustubhchile/git_practice_test/assets/72078555/96348f92-a389-4b8f-af19-80b65ba89f67)  
   Then choose the following option: `pipeline script from SCM` that is pick up a pipeline script from source code
 
   ![Screenshot 2024-05-09 103256](https://github.com/kaustubhchile/git_practice_test/assets/72078555/07e28125-8392-4761-86e5-9157fe0cc426)
+
+  Then add the following details:
+
+  ![Screenshot 2024-05-09 105039](https://github.com/kaustubhchile/git_practice_test/assets/72078555/76958005-5c4d-438c-a0ba-afabece68c73)  
+  Then keep the branch as main as it is the current branch of the github repository and save the changes.
+
+  ![Screenshot 2024-05-09 105246](https://github.com/kaustubhchile/git_practice_test/assets/72078555/719343f4-c475-438c-8e26-825beac156b9)
+
+  Then click on the build now:
+
+  ![Screenshot 2024-05-09 105701](https://github.com/kaustubhchile/git_practice_test/assets/72078555/66fc91a2-ab36-4322-b64c-b622ac24136f)
+
+  To see the console output click here:
+
+  ![Screenshot 2024-05-10 174414](https://github.com/kaustubhchile/git_practice_test/assets/72078555/77c43d22-8df3-4d1f-9d18-bbf9b976eb7c)
+
+  ![Screenshot 2024-05-09 110212](https://github.com/kaustubhchile/git_practice_test/assets/72078555/94faae96-c99f-4979-be5e-1cebed8b775a)  
+  In this above simple created pipeline we just want to see whether node is installed or not with the correct version.
+
+## Multi Stage Multi Agent
+
+Set up a multi stage jenkins pipeline where each stage is run on a unique docker agent. This is a very useful approach when you have multi language application or application that has conflicting dependencies.
+
+Click on configure here:
+
+![Screenshot 2024-05-10 181523](https://github.com/kaustubhchile/git_practice_test/assets/72078555/07436527-e42f-4a65-93be-87a26150c61e)
+
+And Just modify this section of code here:
+
+![Screenshot 2024-05-10 182018](https://github.com/kaustubhchile/git_practice_test/assets/72078555/5cb9c7b1-ddd8-4d3b-9610-f49cac344390)
+
+And then execute the pipeline. When you `docker ps` for some time you will see your containers.
+
+![Screenshot 2024-05-10 183740](https://github.com/kaustubhchile/git_practice_test/assets/72078555/173a3ae1-8d1a-405c-a9c5-34d5107dc8b6)
