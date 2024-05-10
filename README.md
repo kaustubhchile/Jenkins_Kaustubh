@@ -215,23 +215,31 @@ Wait for the Jenkins to be restarted.
 
   ![Screenshot 2024-05-09 103256](https://github.com/kaustubhchile/git_practice_test/assets/72078555/07e28125-8392-4761-86e5-9157fe0cc426)
 
-  Then add the following details:
+<<<<<<< HEAD
+Then add the following details:
 
-  ![Screenshot 2024-05-09 105039](https://github.com/kaustubhchile/git_practice_test/assets/72078555/76958005-5c4d-438c-a0ba-afabece68c73)  
-  Then keep the branch as main as it is the current branch of the github repository and save the changes.
+![Screenshot 2024-05-09 105039](https://github.com/kaustubhchile/git_practice_test/assets/72078555/76958005-5c4d-438c-a0ba-afabece68c73)  
+ Then keep the branch as main as it is the current branch of the github repository and save the changes.
+=======
+Then add the following details:  
+ ![Screenshot 2024-05-09 105039](https://github.com/kaustubhchile/git_practice_test/assets/72078555/76958005-5c4d-438c-a0ba-afabece68c73)  
+ Then keep the branch as main as it is the current branch of the repository and save the changes.
 
-  ![Screenshot 2024-05-09 105246](https://github.com/kaustubhchile/git_practice_test/assets/72078555/719343f4-c475-438c-8e26-825beac156b9)
+> > > > > > > 8eb7fc878ef4bbb2e1976022d4628b750a48e917
 
-  Then click on the build now:
+![Screenshot 2024-05-09 105246](https://github.com/kaustubhchile/git_practice_test/assets/72078555/719343f4-c475-438c-8e26-825beac156b9)
 
-  ![Screenshot 2024-05-09 105701](https://github.com/kaustubhchile/git_practice_test/assets/72078555/66fc91a2-ab36-4322-b64c-b622ac24136f)
+Then click on the build now:
 
-  To see the console output click here:
+![Screenshot 2024-05-09 105701](https://github.com/kaustubhchile/git_practice_test/assets/72078555/66fc91a2-ab36-4322-b64c-b622ac24136f)
 
-  ![Screenshot 2024-05-10 174414](https://github.com/kaustubhchile/git_practice_test/assets/72078555/77c43d22-8df3-4d1f-9d18-bbf9b976eb7c)
+<<<<<<< HEAD
+To see the console output click here:
 
-  ![Screenshot 2024-05-09 110212](https://github.com/kaustubhchile/git_practice_test/assets/72078555/94faae96-c99f-4979-be5e-1cebed8b775a)  
-  In this above simple created pipeline we just want to see whether node is installed or not with the correct version.
+![Screenshot 2024-05-10 174414](https://github.com/kaustubhchile/git_practice_test/assets/72078555/77c43d22-8df3-4d1f-9d18-bbf9b976eb7c)
+
+![Screenshot 2024-05-09 110212](https://github.com/kaustubhchile/git_practice_test/assets/72078555/94faae96-c99f-4979-be5e-1cebed8b775a)  
+ In this above simple created pipeline we just want to see whether node is installed or not with the correct version.
 
 ## Multi Stage Multi Agent
 
@@ -247,4 +255,9 @@ And Just modify this section of code here:
 
 And then execute the pipeline. When you `docker ps` for some time you will see your containers.
 
-![Screenshot 2024-05-10 183740](https://github.com/kaustubhchile/git_practice_test/assets/72078555/173a3ae1-8d1a-405c-a9c5-34d5107dc8b6)
+# ![Screenshot 2024-05-10 183740](https://github.com/kaustubhchile/git_practice_test/assets/72078555/173a3ae1-8d1a-405c-a9c5-34d5107dc8b6)
+
+To see the console output click here:  
+ ![Screenshot 2024-05-09 110212](https://github.com/kaustubhchile/git_practice_test/assets/72078555/94faae96-c99f-4979-be5e-1cebed8b775a)
+
+> > > > > > > 8eb7fc878ef4bbb2e1976022d4628b750a48e917
